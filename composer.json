@@ -1,0 +1,38 @@
+{
+    "name": "antiseptikk/rocketchat-notifier",
+    "type": "symfony-bridge",
+    "description": "Symfony RocketChat Notifier Bridge",
+    "keywords": ["rocketchat", "notifier"],
+    "homepage": "https://github.com/antiseptikk/rocketchat-notifier",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeroen Spee",
+            "email": "spee.jeroen@gmail.com"
+        },
+        {
+            "name": "Thomas Ferney",
+            "email": "thomas.ferney@gmail.com"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+        }
+    ],
+    "require": {
+        "php": "^7.2.9",
+        "symfony/http-client": "^4.3|^5.0",
+        "symfony/notifier": "^5.0"
+    },
+    "autoload": {
+        "psr-4": { "Notifier\\Bridge\\RocketChat\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
